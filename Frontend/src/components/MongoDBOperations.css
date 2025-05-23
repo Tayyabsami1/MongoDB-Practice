@@ -1,0 +1,200 @@
+/* MongoDBOperations.css */
+.mongodb-operations {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.operations-list {
+  flex: 0 0 300px;
+  background-color: #f8f9fa;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.operations-list h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #3a3a88;
+  border-bottom: 2px solid #e9ecef;
+  padding-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.operations-container {
+  overflow-y: auto;
+  flex: 1;
+  padding-right: 0.5rem;
+}
+
+.operation-item {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid #e9ecef;
+}
+
+.operation-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-color: #dbe1e6;
+}
+
+.operation-item.selected {
+  border-color: #3a3a88;
+  box-shadow: 0 0 0 2px rgba(75, 75, 157, 0.2);
+}
+
+.operation-item h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+  color: #222;
+  font-weight: 600;
+}
+
+.operation-item .method {
+  display: inline-block;
+  background-color: #3a3a88;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.operation-details {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+}
+
+.operation-details h2 {
+  margin-top: 0;
+  color: #3a3a88;
+  border-bottom: 2px solid #e9ecef;
+  padding-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.description {
+  color: #444;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.request-config {
+  margin-top: 1rem;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.url-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 0.5rem;
+  border: 1px solid #e9ecef;
+  overflow: hidden;
+}
+
+.method-label {
+  background-color: #3a3a88;
+  color: white;
+  padding: 0.75rem 1rem;
+  font-weight: bold;
+  width: 70px;
+  text-align: center;
+}
+
+.url-input {
+  flex: 1;
+  border: none;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  background-color: transparent;
+  outline: none;
+  color: #222;
+}
+
+.input-container {
+  margin-bottom: 1.5rem;
+}
+
+.input-container h3 {
+  margin-top: 0;
+  color: #444;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.input-container textarea {
+  width: 100%;
+  padding: 1rem;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', monospace;
+  border-radius: 0.5rem;
+  border: 1px solid #e9ecef;
+  font-size: 1rem;
+  resize: vertical;
+  background-color: #f8f9fa;
+  color: #222;
+  line-height: 1.4;
+  min-height: 150px;
+}
+
+.execute-btn {
+  background-color: #3a3a88;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-weight: 600;
+}
+
+.execute-btn:hover {
+  background-color: #2a2a78;
+}
+
+.no-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #444;
+  text-align: center;
+  flex: 1;
+}
+
+.no-selection h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.no-selection p {
+  margin-top: 0;
+  opacity: 0.7;
+  font-size: 1.1rem;
+}
